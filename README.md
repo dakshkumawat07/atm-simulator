@@ -55,13 +55,13 @@ Enter your choice:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ATM-Simulator.git
+git clone https://github.com/dakshkumawat07/atm-simulator
 ```
 
 ### 2. Open the project folder
 
 ```bash
-cd ATM-Simulator
+cd atm-simulator
 ```
 
 ### 3. Compile the program
@@ -69,7 +69,7 @@ cd ATM-Simulator
 Using GCC:
 
 ```bash
-gcc ATM.c -o atm
+gcc main.c -o atm
 ```
 
 ### 4. Run the program
