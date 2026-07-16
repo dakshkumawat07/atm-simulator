@@ -43,7 +43,25 @@ else
     break;
 
             case 3:
-                printf("\nComing Soon...\n");
+
+printf("\nEnter amount to withdraw: ₹");
+    scanf("%f", &amount);
+
+    if (amount <= 0)
+    {
+        printf("\nInvalid amount! Please enter an amount greater than ₹0.\n");
+    }
+    else if (amount > balance)
+    {
+        printf("\nInsufficient balance!\n");
+    }
+    else
+    {
+        balance -= amount;
+
+        printf("\n₹%.2f withdrawn successfully!\n", amount);
+        printf("Current Balance: ₹%.2f\n", balance);
+    }
                 break;
 
             case 4:
