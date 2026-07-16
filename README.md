@@ -1,68 +1,30 @@
-# 🏧 ATM Simulator in C
+# ATM Simulator (C)
 
-A beginner-friendly ATM Simulator built in C using a menu-driven interface. This project helps practice core programming concepts by simulating basic ATM operations such as checking account balance and depositing money.
+A beginner-friendly ATM Simulator built in C as part of my programming learning journey. This project is being developed incrementally, with each version introducing new programming concepts and features.
 
----
+## Features
 
-## ✨ Features
+- Menu-driven interface
+- Check account balance
+- Deposit money
+- Deposit amount validation
+- Withdraw money
+- Withdrawal amount validation
+- Insufficient balance validation
+- Continuous execution using a `do-while` loop
 
-* 🏦 Menu-driven command-line interface
-* 💰 Check current account balance
-* ➕ Deposit money into the account
-* ✅ Validation for invalid deposit amounts
-* 🔄 Continuous menu using a `do-while` loop
-* 📋 Clean and simple terminal interface
+## Concepts Learned
 
----
+- Variables and Data Types
+- Input and Output (`scanf`, `printf`)
+- `switch` Statement
+- `do-while` Loop
+- Conditional Statements (`if`, `else if`, `else`)
+- Arithmetic Operations
+- Input Validation
+- Updating Variables
 
-## 🛠️ Technologies Used
-
-* C Programming Language
-* GCC Compiler
-* Git & GitHub
-* Kali Linux
-
----
-
-## 📂 Project Structure
-
-```text
-atm-simulator/
-├── main.c
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/atm-simulator.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
-cd atm-simulator
-```
-
-### 3. Compile the program
-
-```bash
-gcc main.c -o atm
-```
-
-### 4. Run the program
-
-```bash
-./atm
-```
-
----
-
-## 💻 Example Output
+## Sample Menu
 
 ```text
 =================================
@@ -72,42 +34,38 @@ gcc main.c -o atm
 2. Deposit Money
 3. Withdraw Money
 4. Exit
-
-Enter your choice: 2
-
-Enter amount to deposit: ₹500
-
-₹500.00 deposited successfully!
-Current Balance: ₹1500.00
 ```
 
+## Project Versions
+
+### v1.0
+- Menu-driven interface
+- Exit option
+
+### v1.1
+- Check account balance
+
+### v1.2
+- Deposit money
+- Deposit amount validation
+
+### v1.3
+- Withdraw money
+- Withdrawal amount validation
+- Insufficient balance validation
+
+## Planned Improvements
+
+- v1.4 - Better user interface
+- v1.5 - Cleaner code structure
+- v2.0 - Functions
+- v2.1 - PIN Authentication
+- v3.0 - File Handling
+
+## Author
+
+Daksh Kumawat
+
 ---
 
-## 📚 Concepts Practiced
-
-* Variables and Data Types
-* User Input and Output
-* `switch` Statements
-* `do-while` Loops
-* Conditional Statements (`if-else`)
-* Floating-Point Numbers (`float`)
-* Basic Input Validation
-
----
-
-## 🚀 Upcoming Features
-
-* 💸 Withdraw Money
-* 🚫 Insufficient Balance Check
-* 🔐 ATM PIN Authentication
-* 🧩 Functions (`checkBalance()`, `deposit()`, `withdraw()`)
-* 💾 File Handling for Saving Balance
-* 📜 Transaction History
-
----
-
-## 👨‍💻 Author
-
-**Daksh Kumawat**
-
-Learning C programming and software development by building practical projects one step at a time and documenting the journey on GitHub.
+*This project is part of my C programming practice and is being built step by step following professional software development and GitHub workflow.*
