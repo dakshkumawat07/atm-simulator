@@ -7,9 +7,9 @@ int main()
     float amount;
     do
     {
-        printf("\n=================================\n");
-        printf("        ATM Simulator\n");
-        printf("=================================\n");
+        printf("\n=======================================\n");
+        printf("        WELCOME TO ATM SIMULATOR\n");
+        printf("=======================================\n");
 
         printf("1. Check Balance\n");
         printf("2. Deposit Money\n");
@@ -22,7 +22,11 @@ int main()
         switch(choice)
         {
             case 1:
-                printf("\nCurrent Balance: ₹%.2f\n", balance);
+                printf("\n-------------------------------------\n");
+                printf("      ACCOUNT INFORMATION\n");
+                printf("-------------------------------------\n");
+                printf("Current Balance : ₹%.2f\n", balance);
+                printf("-------------------------------------\n");
                 break;
 
             case 2:
@@ -33,12 +37,19 @@ int main()
 {
     balance += amount;
 
-    printf("\n₹%.2f deposited successfully!\n", amount);
-    printf("Current Balance: ₹%.2f\n", balance);
+   printf("\n=====================================\n");
+   printf("    TRANSACTION SUCCESSFUL\n");
+   printf("=====================================\n");
+   printf("₹%.2f deposited successfully.\n", amount);
+   printf("Current Balance : ₹%.2f\n", balance);
+
 }
 else
 {
-    printf("\nInvalid amount! Please enter an amount greater than ₹0.\n");
+  printf("\n=====================================\n");
+  printf("      TRANSACTION FAILED\n");
+  printf("=====================================\n");
+  printf("Reason : Invalid deposit amount.\n");
 }
     break;
 
@@ -53,14 +64,21 @@ printf("\nEnter amount to withdraw: ₹");
     }
     else if (amount > balance)
     {
-        printf("\nInsufficient balance!\n");
+      printf("\n=====================================\n");
+      printf("      TRANSACTION FAILED\n");
+      printf("=====================================\n");
+      printf("Reason : Insufficient balance.\n");
     }
     else
     {
         balance -= amount;
 
-        printf("\n₹%.2f withdrawn successfully!\n", amount);
-        printf("Current Balance: ₹%.2f\n", balance);
+  printf("\n=====================================\n");
+  printf("    TRANSACTION SUCCESSFUL\n");
+  printf("=====================================\n");
+  printf("₹%.2f withdrawn successfully.\n", amount);
+  printf("Current Balance : ₹%.2f\n", balance);
+
     }
                 break;
 
