@@ -102,9 +102,9 @@ Follow the on-screen instructions to complete your transaction.
 ## 📂 Project Structure
 
 ```text
-ATM-Simulator/
+atm-simulator/
 │
-├── ATM.c
+├── main.c
 └── README.md
 ```
 
@@ -134,14 +134,17 @@ ATM-Simulator/
 - Prevented withdrawal when the balance is insufficient
 - Updated balance after successful withdrawal
 
+### ✅ v1.4
+
+- Improved console user interface
+- Added professional transaction messages
+- Improved account information display
+- Enhanced overall user experience
+
 ---
 
 ## 🔮 Planned Improvements
 
-### 🎨 v1.4
-
-- Improve console UI
-- Better formatting and user experience
 
 ### 🧹 v1.5
 
