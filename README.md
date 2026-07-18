@@ -6,6 +6,10 @@ A menu-driven ATM Simulator built in **C** as part of my C programming learning 
 
 ## ✨ Features
 
+
+- ✅ Clean and readable code structure
+- ✅ Professional console interface
+- ✅ Improved user experience
 - ✅ Menu-driven interface
 - ✅ Check account balance
 - ✅ Deposit money
@@ -141,15 +145,17 @@ atm-simulator/
 - Improved account information display
 - Enhanced overall user experience
 
+### ✅ v1.5
+
+- Improved code formatting and readability
+- Enhanced menu layout
+- Added a professional exit screen
+- Improved overall console user experience
+
 ---
 
 ## 🔮 Planned Improvements
 
-
-### 🧹 v1.5
-
-- Reduce repeated code
-- Improve code readability
 
 ### 🧩 v2.0
 
