@@ -16,9 +16,10 @@ int main()
         printf("3. Withdraw Money\n");
         printf("4. Exit\n");
 
+
+        printf("=======================================\n");
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
-
         switch(choice)
         {
             case 1:
@@ -31,64 +32,68 @@ int main()
 
             case 2:
                  printf("\nEnter amount to deposit: ₹");
-    scanf("%f", &amount);
+                 scanf("%f", &amount);
 
-    if (amount > 0)
-{
-    balance += amount;
+                 if (amount > 0)
+                {
+                 balance += amount;
 
-   printf("\n=====================================\n");
-   printf("    TRANSACTION SUCCESSFUL\n");
-   printf("=====================================\n");
-   printf("₹%.2f deposited successfully.\n", amount);
-   printf("Current Balance : ₹%.2f\n", balance);
+                 printf("\n=====================================\n");
+                 printf("    TRANSACTION SUCCESSFUL\n");
+                 printf("=====================================\n");
+                 printf("₹%.2f deposited successfully.\n", amount);
+                 printf("Current Balance : ₹%.2f\n", balance);
 
-}
-else
-{
-  printf("\n=====================================\n");
-  printf("      TRANSACTION FAILED\n");
-  printf("=====================================\n");
-  printf("Reason : Invalid deposit amount.\n");
-}
-    break;
+                }
+            else
+                {
+                 printf("\n=====================================\n");
+                 printf("      TRANSACTION FAILED\n");
+                 printf("=====================================\n");
+                 printf("Reason : Invalid deposit amount.\n");
+                }
+                  break;
 
             case 3:
 
-printf("\nEnter amount to withdraw: ₹");
-    scanf("%f", &amount);
+                printf("\nEnter amount to withdraw: ₹");
+                scanf("%f", &amount);
 
-    if (amount <= 0)
-    {
-        printf("\nInvalid amount! Please enter an amount greater than ₹0.\n");
-    }
-    else if (amount > balance)
-    {
-      printf("\n=====================================\n");
-      printf("      TRANSACTION FAILED\n");
-      printf("=====================================\n");
-      printf("Reason : Insufficient balance.\n");
-    }
-    else
-    {
-        balance -= amount;
+                if (amount <= 0)
+               {
+                printf("\nInvalid amount! Please enter an amount greater than ₹0.\n");
+               }
 
-  printf("\n=====================================\n");
-  printf("    TRANSACTION SUCCESSFUL\n");
-  printf("=====================================\n");
-  printf("₹%.2f withdrawn successfully.\n", amount);
-  printf("Current Balance : ₹%.2f\n", balance);
+               else if (amount > balance)
+               {
+                printf("\n=====================================\n");
+                printf("      TRANSACTION FAILED\n");
+                printf("=====================================\n");
+                printf("Reason : Insufficient balance.\n");
+               }
+                else
+               {
+                balance -= amount;
 
-    }
+                printf("\n=====================================\n");
+                printf("    TRANSACTION SUCCESSFUL\n");
+                printf("=====================================\n");
+                printf("₹%.2f withdrawn successfully.\n", amount);
+                printf("Current Balance : ₹%.2f\n", balance);
+
+               }
                 break;
 
             case 4:
-                printf("\nThank you for using our ATM!\n");
+                printf("\n=======================================\n");
+                printf("   THANK YOU FOR USING ATM SIMULATOR\n");
+                printf("        Have a Great Day!\n");
+                printf("=======================================\n");
                 break;
 
-            default:
+                default:
                 printf("\nInvalid Choice!\n");
-        }
+               }
 
     } while(choice != 4);
 
