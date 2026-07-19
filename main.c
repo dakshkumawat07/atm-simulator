@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+void displayMenu();
+
+void displayBalance(float balance);
+
 int main()
 {
     int choice;
@@ -7,27 +11,16 @@ int main()
     float amount;
     do
     {
-        printf("\n=======================================\n");
-        printf("        WELCOME TO ATM SIMULATOR\n");
-        printf("=======================================\n");
+        displayMenu();
 
-        printf("1. Check Balance\n");
-        printf("2. Deposit Money\n");
-        printf("3. Withdraw Money\n");
-        printf("4. Exit\n");
-
-
-        printf("=======================================\n");
-        printf("\nEnter your choice: ");
         scanf("%d", &choice);
+
         switch(choice)
         {
             case 1:
-                printf("\n-------------------------------------\n");
-                printf("      ACCOUNT INFORMATION\n");
-                printf("-------------------------------------\n");
-                printf("Current Balance : ₹%.2f\n", balance);
-                printf("-------------------------------------\n");
+
+                displayBalance(balance);
+
                 break;
 
             case 2:
@@ -98,4 +91,28 @@ int main()
     } while(choice != 4);
 
     return 0;
+}
+
+    void displayMenu()
+{
+    printf("\n=======================================\n");
+    printf("        WELCOME TO ATM SIMULATOR\n");
+    printf("=======================================\n");
+
+    printf("1. Check Balance\n");
+    printf("2. Deposit Money\n");
+    printf("3. Withdraw Money\n");
+    printf("4. Exit\n");
+
+    printf("=======================================\n");
+    printf("Enter your choice: ");
+}
+
+    void displayBalance(float balance)
+{
+    printf("\n-------------------------------------\n");
+    printf("      ACCOUNT INFORMATION\n");
+    printf("-------------------------------------\n");
+    printf("Current Balance : ₹%.2f\n", balance);
+    printf("-------------------------------------\n");
 }
