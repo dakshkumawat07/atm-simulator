@@ -152,14 +152,19 @@ atm-simulator/
 - Added a professional exit screen
 - Improved overall console user experience
 
+### 🔄 v2.0 (In Progress)
+- Introduced functions
+- Created `displayMenu()`
+- Created `displayBalance(float balance)`
+- Created `showSuccessMessage()`
+- Created `showFailureMessage()`
+- Reduced duplicate code
+- Improved code organization
+
 ---
 
 ## 🔮 Planned Improvements
 
-
-### 🧩 v2.0
-
-- Refactor the program using functions
 
 ### 🔐 v2.1
 
