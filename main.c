@@ -4,6 +4,10 @@ void displayMenu();
 
 void displayBalance(float balance);
 
+void showSuccessMessage();
+
+void showFailureMessage();
+
 int main()
 {
     int choice;
@@ -31,18 +35,15 @@ int main()
                 {
                  balance += amount;
 
-                 printf("\n=====================================\n");
-                 printf("    TRANSACTION SUCCESSFUL\n");
-                 printf("=====================================\n");
+                 showSuccessMessage();
+
                  printf("₹%.2f deposited successfully.\n", amount);
                  printf("Current Balance : ₹%.2f\n", balance);
 
                 }
             else
                 {
-                 printf("\n=====================================\n");
-                 printf("      TRANSACTION FAILED\n");
-                 printf("=====================================\n");
+                 showFailureMessage();
                  printf("Reason : Invalid deposit amount.\n");
                 }
                   break;
@@ -59,9 +60,8 @@ int main()
 
                else if (amount > balance)
                {
-                printf("\n=====================================\n");
-                printf("      TRANSACTION FAILED\n");
-                printf("=====================================\n");
+                showSuccessMessage();
+
                 printf("Reason : Insufficient balance.\n");
                }
                 else
@@ -115,4 +115,18 @@ int main()
     printf("-------------------------------------\n");
     printf("Current Balance : ₹%.2f\n", balance);
     printf("-------------------------------------\n");
+}
+
+void showSuccessMessage()
+{
+    printf("\n=====================================\n");
+    printf("    TRANSACTION SUCCESSFUL\n");
+    printf("=====================================\n");
+}
+
+void showFailureMessage()
+{
+    printf("\n=====================================\n");
+    printf("      TRANSACTION FAILED\n");
+    printf("=====================================\n");
 }
