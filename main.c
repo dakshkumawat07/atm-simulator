@@ -68,9 +68,8 @@ int main()
                {
                 balance -= amount;
 
-                printf("\n=====================================\n");
-                printf("    TRANSACTION SUCCESSFUL\n");
-                printf("=====================================\n");
+                showSuccessMessage();
+
                 printf("₹%.2f withdrawn successfully.\n", amount);
                 printf("Current Balance : ₹%.2f\n", balance);
 
