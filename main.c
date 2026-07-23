@@ -13,6 +13,29 @@ int main()
     int choice;
     float balance = 500.00;
     float amount;
+
+    int pin = 1234;
+    int enteredPin;
+
+    printf("=======================================\n");
+    printf("         ATM LOGIN\n");
+    printf("=======================================\n");
+    printf("Enter your 4-digit PIN: ");
+    scanf("%d", &enteredPin);
+
+ 
+    if (enteredPin != pin)
+     {
+         printf("\n=======================================\n");
+         printf("        ACCESS DENIED\n");
+         printf("=======================================\n");
+         printf("Incorrect PIN!\n");
+
+         return 0;
+     }
+
+
+
     do
     {
         displayMenu();
