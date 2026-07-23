@@ -16,23 +16,36 @@ int main()
 
     int pin = 1234;
     int enteredPin;
+    int attempts = 0;
 
-    printf("=======================================\n");
-    printf("         ATM LOGIN\n");
-    printf("=======================================\n");
-    printf("Enter your 4-digit PIN: ");
-    scanf("%d", &enteredPin);
+    // PIN Authentication
 
- 
-    if (enteredPin != pin)
+    while (attempts < 3)
      {
-         printf("\n=======================================\n");
-         printf("        ACCESS DENIED\n");
-         printf("=======================================\n");
-         printf("Incorrect PIN!\n");
+       printf("=======================================\n");
+       printf("             ATM LOGIN\n");
+       printf("=======================================\n");
+       printf("Enter your 4-digit PIN: ");
+       scanf("%d", &enteredPin);
 
-         return 0;
-     }
+       if (enteredPin == pin)
+{
+        printf("\nLogin Successful!\n");
+        break;
+    }
+
+      attempts++;
+
+      showFailureMessage();
+      printf("Incorrect PIN!\n");
+      printf("Remaining Attempts: %d\n", 3 - attempts);
+
+      if (attempts == 3)
+    {
+        printf("\nYour card has been blocked.\n");
+        return 0;
+    }
+}
 
 
 
