@@ -77,19 +77,22 @@ A ATM Simulator built in C as part of my C Programming learning journey. This pr
 - Reduced duplicate code
 - Improved code organization
 
-### 🔄 v2.1 (In Progress)
-- Fixed 4-digit PIN
+### ✅ v2.1
+- PIN Authentication
+- Fixed PIN
 - PIN Verification
-- Login Screen
 - Maximum 3 Login Attempts
-- Card Blocking after 3 Wrong Attempts
 
+### ✅ v2.2
+- Introduced Arrays
+- Stored Transaction Amounts
+- Transaction Counter
+- View Transaction History
+- First use of `for` loop
 ---
 
 ## 🔮 Planned Improvements
 
-- Complete PIN Authentication Refactoring
-- Transaction History
 - Mini Statement
 - Change PIN
 - File Handling
