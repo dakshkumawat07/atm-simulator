@@ -19,6 +19,7 @@ int main()
     int attempts = 0;
 
     float transactions[10];
+    char transactionType[10];
     int transactionCount = 0;
 
 
@@ -76,6 +77,7 @@ int main()
                  balance += amount;
 
                  transactions[transactionCount] = amount;
+                 transactionType[transactionCount] = 'D';
                  transactionCount++;
 
                  showSuccessMessage();
@@ -111,6 +113,12 @@ int main()
                {
                 balance -= amount;
 
+                transactions[transactionCount] = amount;
+                transactionType[transactionCount] = 'W';
+                transactionCount++;
+
+
+
                 showSuccessMessage();
 
                 printf("₹%.2f withdrawn successfully.\n", amount);
@@ -127,7 +135,15 @@ int main()
 
                 for (int i = 0; i < transactionCount; i++)
               {
-                printf("%d. ₹%.2f\n", i + 1, transactions[i]);
+                if (transactionType[i] == 'D')
+                {
+                   printf("%d. Deposit   ₹%.2f\n", i + 1, transactions[i]);
+                }
+                else
+                {
+                   printf("%d. Withdraw  ₹%.2f\n", i + 1, transactions[i]);
+                }
+
               }
 
                 printf("=====================================\n");
