@@ -18,6 +18,10 @@ int main()
     int enteredPin;
     int attempts = 0;
 
+    float transactions[10];
+    int transactionCount = 0;
+
+
     // PIN Authentication
 
     while (attempts < 3)
@@ -71,6 +75,9 @@ int main()
                 {
                  balance += amount;
 
+                 transactions[transactionCount] = amount;
+                 transactionCount++;
+
                  showSuccessMessage();
 
                  printf("₹%.2f deposited successfully.\n", amount);
@@ -113,6 +120,22 @@ int main()
                 break;
 
             case 4:
+
+                printf("\n=====================================\n");
+                printf("      TRANSACTION HISTORY\n");
+                printf("=====================================\n");
+
+                for (int i = 0; i < transactionCount; i++)
+              {
+                printf("%d. ₹%.2f\n", i + 1, transactions[i]);
+              }
+
+                printf("=====================================\n");
+
+                break;
+
+
+            case 5:
                 printf("\n=======================================\n");
                 printf("   THANK YOU FOR USING ATM SIMULATOR\n");
                 printf("        Have a Great Day!\n");
@@ -123,7 +146,7 @@ int main()
                 printf("\nInvalid Choice!\n");
                }
 
-    } while(choice != 4);
+    } while(choice != 5);
 
     return 0;
 }
@@ -137,7 +160,8 @@ int main()
     printf("1. Check Balance\n");
     printf("2. Deposit Money\n");
     printf("3. Withdraw Money\n");
-    printf("4. Exit\n");
+    printf("4. Transaction History\n");
+    printf("5. Exit\n");
 
     printf("=======================================\n");
     printf("Enter your choice: ");
