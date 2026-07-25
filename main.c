@@ -16,6 +16,7 @@ int main()
 
     int pin = 1234;
     int enteredPin;
+    int newPin;
     int attempts = 0;
 
     float transactions[10];
@@ -150,8 +151,35 @@ int main()
 
                 break;
 
+          case 5:
 
-            case 5:
+              printf("\n=====================================\n");
+              printf("          CHANGE PIN\n");
+              printf("=====================================\n");
+
+              printf("Enter Current PIN: ");
+              scanf("%d", &enteredPin);
+
+              if (enteredPin != pin)
+              {
+              showFailureMessage();
+              printf("Incorrect current PIN.\n");
+               break;
+              }
+
+             printf("\nEnter New 4-digit PIN: ");
+             scanf("%d", &newPin);
+
+             pin = newPin;
+
+             showSuccessMessage();
+             printf("PIN changed successfully.\n");
+
+             break;
+
+
+
+            case 6:
                 printf("\n=======================================\n");
                 printf("   THANK YOU FOR USING ATM SIMULATOR\n");
                 printf("        Have a Great Day!\n");
@@ -162,7 +190,7 @@ int main()
                 printf("\nInvalid Choice!\n");
                }
 
-    } while(choice != 5);
+    } while(choice != 6);
 
     return 0;
 }
@@ -177,7 +205,8 @@ int main()
     printf("2. Deposit Money\n");
     printf("3. Withdraw Money\n");
     printf("4. Transaction History\n");
-    printf("5. Exit\n");
+    printf("5. Change PIN\n");
+    printf("6. Exit\n");
 
     printf("=======================================\n");
     printf("Enter your choice: ");
