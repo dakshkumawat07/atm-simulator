@@ -18,7 +18,8 @@ A ATM Simulator built in C as part of my C Programming learning journey. This pr
 - 🎨 Improved Console UI
 - ♻️ Reusable Functions
 - ✅ Professional Transaction Messages
-
+- 🔑 Change PIN
+- ✅ Current PIN Verification
 ---
 
 ## 🧠 Concepts Learned
@@ -89,12 +90,18 @@ A ATM Simulator built in C as part of my C Programming learning journey. This pr
 - Transaction Counter
 - View Transaction History
 - First use of `for` loop
+
+### ✅ v2.3
+- Added Change PIN feature
+- Verify Current PIN
+- Update PIN during program execution
+- Improved Authentication Flow
+
 ---
 
 ## 🔮 Planned Improvements
 
 - Mini Statement
-- Change PIN
 - File Handling
 - Save Balance
 - Save Transaction History
