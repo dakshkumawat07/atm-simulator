@@ -35,7 +35,7 @@ int main()
        scanf("%d", &enteredPin);
 
        if (enteredPin == pin)
-{
+    {
         printf("\nLogin Successful!\n");
         break;
     }
@@ -169,6 +169,14 @@ int main()
 
              printf("\nEnter New 4-digit PIN: ");
              scanf("%d", &newPin);
+
+             if (newPin < 1000 || newPin > 9999)
+            {
+             showFailureMessage();
+             printf("PIN must be exactly 4 digits.\n");
+             break;
+            }
+
 
              pin = newPin;
 
